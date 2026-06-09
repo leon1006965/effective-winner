@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Delta Executor iOS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #05050a;
+            color: #f3f4f6;
+        }
+        .font-header {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 15, 25, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #a78bfa 0%, #ec4899 50%, #f43f5e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-btn {
+            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gradient-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.5);
+        }
+        /* Hide scrollbar for gallery on chrome/safari */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body class="min-h-screen selection:bg-pink-500 selection:text-white overflow-x-hidden relative">
+
+    <!-- Glowing Background blobs -->
+    <div class="absolute top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 translate-x-1/2 w-[400px] h-[400px] bg-pink-900/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Navigation Header -->
+    <header class="w-full max-w-6xl mx-auto px-6 py-5 flex items-center justify-between relative z-10">
+        <div class="flex items-center gap-3">
+            <img src="https://tse3.mm.bing.net/th/id/OIP._OVx9NIQeIxnRm6ik6DOVwAAAA?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                 alt="Delta Logo" 
+                 class="w-10 h-10 rounded-xl object-cover shadow-lg shadow-purple-950/40"
+                 onerror="this.src='https://images.unsplash.com/photo-1612287230202-1bf1d85d1bdf?auto=format&fit=crop&w=50&q=80'" />
+            <span class="font-header font-bold text-xl tracking-tight bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Delta iOS</span>
+        </div>
+        <a href="#install-guide" class="text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors bg-purple-950/30 px-4 py-2 rounded-full border border-purple-900/40">
+            Installation Guide
+        </a>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="w-full max-w-6xl mx-auto px-6 pt-8 pb-24 relative z-10">
+        
+        <!-- Hero Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
+            
+            <!-- Hero details column -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs text-purple-300 font-semibold tracking-wide mx-auto lg:mx-0">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    Now Supporting iOS 15+
+                </div>
+                
+                <h1 class="font-header text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight">
+                    Experience Next-Gen<br />
+                    <span class="gradient-text">Delta Executor</span> on iOS
+                </h1>
+                
+                <p class="text-gray-400 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Unleash full automation, script execution, and seamless emulator control on your iPhone or iPad. Simple installation via secure iOS configuration profile.
+                </p>
+
+                <!-- Core Details Grid -->
+                <div class="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 pt-2">
+                    <div class="glass-card p-3 rounded-2xl text-center">
+                        <span class="block text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-1">Version</span>
+                        <span class="font-semibold text-white text-sm">v2.6.4</span>
+                    </div>
+                    <div class="glass-card p-3 rounded-2xl text-center">
+                        <span class="block text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-1">Developer</span>
+                        <span class="font-semibold text-white text-sm">Delta Team</span>
+                    </div>
+                    <div class="glass-card p-3 rounded-2xl text-center">
+                        <span class="block text-gray-500 text-[10px] uppercase font-bold tracking-wider mb-1">Platform</span>
+                        <span class="font-semibold text-white text-sm">iOS / iPadOS</span>
+                    </div>
+                </div>
+
+                <!-- Call to Actions -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                    <!-- Direct profile link download -->
+                    <a href="https://raw.githubusercontent.com/leon1006965/effective-winner/refs/heads/main/Delta.mobileconfig" 
+                       class="gradient-btn text-white font-bold py-4 px-8 rounded-2xl shadow-lg flex items-center justify-center gap-3 text-base">
+                        <i class="fab fa-apple text-xl"></i>
+                        Download Profile (iOS)
+                    </a>
+                    
+                    <a href="#install-guide" 
+                       class="bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 text-gray-200 font-semibold py-4 px-8 rounded-2xl transition-all flex items-center justify-center gap-2 text-base">
+                        <i class="fas fa-book-open"></i>
+                        Read Instructions
+                    </a>
+                </div>
+                
+                <p class="text-[11px] text-gray-500 max-w-md mx-auto lg:mx-0">
+                    *Note: Tap "Download Profile" inside Safari for the standard iOS system configuration dialog to launch automatically.
+                </p>
+            </div>
+
+            <!-- App Icon/Installation preview column -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Outer pulsating light ring -->
+                    <div class="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-[34%] opacity-40 blur-xl group-hover:opacity-60 transition-opacity duration-700 animate-pulse"></div>
+                    
+                    <!-- App Frame container -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 bg-slate-950 rounded-[32%] p-[4px] border border-white/10 shadow-2xl overflow-hidden flex items-center justify-center">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP._OVx9NIQeIxnRm6ik6DOVwAAAA?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                             alt="Delta Launcher Icon" 
+                             class="w-full h-full object-cover rounded-[30%] shadow-inner"
+                             onerror="this.src='https://images.unsplash.com/photo-1612287230202-1bf1d85d1bdf?auto=format&fit=crop&w=400&q=80'" />
+                        
+                        <!-- Mini dynamic badge overlays -->
+                        <div class="absolute bottom-6 right-6 bg-green-500 text-black text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1.5 shadow-md border-2 border-slate-950">
+                            <span class="w-1.5 h-1.5 rounded-full bg-black animate-ping"></span>
+                            ACTIVE
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Screenshots Section -->
+        <div class="mb-24">
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <h2 class="font-header text-2xl sm:text-3xl font-bold tracking-tight text-white mb-2">In-Action Screenshots</h2>
+                <p class="text-gray-400 text-sm">A preview of Delta's workspace, executor hub, and UI layout on real iOS devices.</p>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-purple-500/30 transition-all duration-300">
+                    <div class="aspect-video relative overflow-hidden bg-slate-900">
+                        <img src="https://i.ytimg.com/vi/2g-2U7wmTb8/maxresdefault.jpg" 
+                             alt="Delta Executor iOS Setup" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-sm text-gray-200">Execution Workspace</h3>
+                        <p class="text-xs text-gray-500 mt-1">Sleek multi-tab editor featuring active script libraries.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-purple-500/30 transition-all duration-300">
+                    <div class="aspect-video relative overflow-hidden bg-slate-900">
+                        <img src="https://i.ytimg.com/vi/pjXJdg-RPpM/maxresdefault.jpg" 
+                             alt="Delta UI Configuration" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-sm text-gray-200">UI Controls & Customization</h3>
+                        <p class="text-xs text-gray-500 mt-1">On-screen overlay menu optimized for touch displays.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group hover:border-purple-500/30 transition-all duration-300">
+                    <div class="aspect-video relative overflow-hidden bg-slate-900">
+                        <img src="https://i.ytimg.com/vi/MJ-tkfM-k0Y/maxresdefault.jpg" 
+                             alt="Delta Game Implementation" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-sm text-gray-200">Optimal Performance Engine</h3>
+                        <p class="text-xs text-gray-500 mt-1">Low-latency memory injection utilizing safe compilation models.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Installation Instructions Section -->
+        <div id="install-guide" class="scroll-mt-24">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="absolute -top-12 -right-12 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="max-w-3xl mx-auto">
+                    <div class="mb-10 text-center sm:text-left">
+                        <h2 class="font-header text-3xl font-extrabold text-white mb-2">How to Install on iOS</h2>
+                        <p class="text-gray-400 text-sm">Follow these quick, easy steps to configure Delta on your iPhone or iPad.</p>
+                    </div>
+
+                    <!-- Flow Steps -->
+                    <div class="space-y-6 relative">
+                        <!-- Step Lines connection -->
+                        <div class="absolute left-6 top-3 bottom-3 w-[2px] bg-slate-800/80 z-0"></div>
+
+                        <!-- Step 1 -->
+                        <div class="flex items-start gap-4 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 font-bold flex items-center justify-center shrink-0">
+                                1
+                            </div>
+                            <div class="pt-2">
+                                <h4 class="font-bold text-gray-200 text-sm sm:text-base">Download the Configuration Profile</h4>
+                                <p class="text-xs sm:text-sm text-gray-400 mt-1">
+                                    Tap the primary "Download Profile" button at the top of the page. Ensure you are using the <strong class="text-white font-medium">Safari Browser</strong> for iOS systems to register it correctly.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="flex items-start gap-4 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 font-bold flex items-center justify-center shrink-0">
+                                2
+                            </div>
+                            <div class="pt-2">
+                                <h4 class="font-bold text-gray-200 text-sm sm:text-base">Allow Profile Download Prompt</h4>
+                                <p class="text-xs sm:text-sm text-gray-400 mt-1">
+                                    When iOS shows the notification popup stating: <span class="italic text-pink-400">"This website is trying to download a configuration profile..."</span>, tap <strong class="text-white">Allow</strong>.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="flex items-start gap-4 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 font-bold flex items-center justify-center shrink-0">
+                                3
+                            </div>
+                            <div class="pt-2">
+                                <h4 class="font-bold text-gray-200 text-sm sm:text-base">Open iOS Settings</h4>
+                                <p class="text-xs sm:text-sm text-gray-400 mt-1">
+                                    Launch your device's native <strong class="text-white font-medium">Settings</strong> application and navigate directly to the <strong class="text-white font-medium">"Profile Downloaded"</strong> menu item right near the top.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="flex items-start gap-4 relative z-10">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 font-bold flex items-center justify-center shrink-0">
+                                4
+                            </div>
+                            <div class="pt-2">
+                                <h4 class="font-bold text-gray-200 text-sm sm:text-base">Install & Authenticate</h4>
+                                <p class="text-xs sm:text-sm text-gray-400 mt-1">
+                                    Tap <strong class="text-white">Install</strong> in the top-right corner, enter your passcode to authenticate the signature certificate, and tap Install once more to finish setting up Delta!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Direct Quick Install CTA inside the guide -->
+                    <div class="mt-10 p-6 bg-[#0c0c16] rounded-2xl border border-purple-950 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <h5 class="font-bold text-white text-sm sm:text-base">Ready to start the installation?</h5>
+                            <p class="text-xs text-gray-400 mt-0.5">Click directly below to fetch the verified configuration profile.</p>
+                        </div>
+                        <a href="https://raw.githubusercontent.com/leon1006965/effective-winner/refs/heads/main/Delta.mobileconfig" 
+                           class="w-full sm:w-auto text-center gradient-btn text-white font-bold py-3 px-6 rounded-xl text-xs sm:text-sm shadow-md">
+                            Install Profile Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm py-8 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <p class="text-xs text-gray-500">
+                &copy; 2026 Delta Executor iOS. Developed for safe mobile gaming customizations.
+            </p>
+            <p class="text-xs text-gray-600">
+                Not affiliated with Apple Inc. or Roblox Corporation.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
