@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Emulator</title>
+    <!-- Tailwind CSS CDN for clean styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0d12;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6">
+
+    <div class="w-full max-w-xs flex flex-col items-center text-center space-y-6">
+        <!-- App Icon -->
+        <div class="w-28 h-28 bg-[#1c1830] rounded-[24%] p-[2px] shadow-xl overflow-hidden">
+            <img 
+                src="https://tse3.mm.bing.net/th/id/OIP._OVx9NIQeIxnRm6ik6DOVwAAAA?cb=thfc1falcon2&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                alt="Delta Emulator Icon" 
+                class="w-full h-full object-cover rounded-[22%]"
+            />
+        </div>
+
+        <!-- Title / Status Area -->
+        <div class="space-y-2">
+            <h1 class="text-2xl font-bold tracking-tight">Delta</h1>
+            <p id="statusText" class="text-gray-400 text-sm">Loading...</p>
+        </div>
+
+        <!-- Loading Interface -->
+        <div id="loadingArea" class="w-full space-y-3">
+            <!-- Progress Bar Container -->
+            <div class="w-full bg-[#1f1f2e] h-1.5 rounded-full overflow-hidden">
+                <div id="progressBar" class="bg-purple-600 h-full w-0 transition-all duration-100 ease-linear"></div>
+            </div>
+        </div>
+
+        <!-- Failed Interface (Hidden Initially) -->
+        <div id="failedArea" class="hidden w-full animate-fade-in space-y-4">
+            <p class="text-red-500 font-medium text-sm">Failed To Load Delta</p>
+            <button 
+                onclick="restartLoading()" 
+                class="text-xs text-purple-400 hover:text-purple-300 transition-colors underline font-medium"
+            >
+                Try Again
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const TOTAL_DURATION = 10000; // 10 seconds
+        const INTERVAL_TIME = 100; // Update every 100ms
+        
+        let elapsedTime = 0;
+        let timerId = null;
+
+        const progressBar = document.getElementById("progressBar");
+        const statusText = document.getElementById("statusText");
+        const loadingArea = document.getElementById("loadingArea");
+        const failedArea = document.getElementById("failedArea");
+
+        function startLoading() {
+            elapsedTime = 0;
+            statusText.textContent = "Loading...";
+            statusText.classList.remove("text-red-500");
+            statusText.classList.add("text-gray-400");
+            
+            progressBar.style.width = "0%";
+            
+            loadingArea.classList.remove("hidden");
+            failedArea.classList.add("hidden");
+
+            timerId = setInterval(() => {
+                elapsedTime += INTERVAL_TIME;
+                const percentage = (elapsedTime / TOTAL_DURATION) * 100;
+                
+                progressBar.style.width = `${Math.min(percentage, 100)}%`;
+
+                if (elapsedTime >= TOTAL_DURATION) {
+                    clearInterval(timerId);
+                    showFailure();
+                }
+            }, INTERVAL_TIME);
+        }
+
+        function showFailure() {
+            statusText.textContent = "Unable to launch Delta";
+            statusText.classList.remove("text-gray-400");
+            statusText.classList.add("text-red-500");
+            
+            loadingArea.classList.add("hidden");
+            failedArea.classList.remove("hidden");
+        }
+
+        function restartLoading() {
+            clearInterval(timerId);
+            startLoading();
+        }
+
+        // Start loading sequence when page is ready
+        window.onload = startLoading;
+    </script>
+
+</body>
+</html>
